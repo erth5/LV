@@ -119,4 +119,4 @@ run server
 php artisan serve
 ````
 
-A all B C calendar D E F frontend G gulp H I J K L M N O P public_table Q R S T template U V W X Y Z
+A all B bootstrap C calendar D E F frontend G gulp H I J K L M N O P public_table Q R react S T template U V vue W X Y Z
