@@ -24,3 +24,6 @@ mix.js('resources/js/app.js', 'public/js')
         require('tailwindcss')
     ]);
 */
+
+// sync without reload, load localhost:3000
+//mix.browserSync('http://127.0.0.1:8000/');

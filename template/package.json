@@ -1,6 +1,14 @@
 {
     "private": true,
+    "name": "template",
+    "description": "template for laravel with webpack and sass, ts",
+    "windows_description": "line win works under windows",
+    "linux_description": "line lx works under unix/linux/windows with subsystem",
     "scripts": {
+        "win": "start npm run watch-poll && start php artisan serve",
+        "lx": "start npm run watch-poll & start php artisan serve",
+        "bg": "nohup start npm run watch-poll & nohup start php artisan serve",
+
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
@@ -11,8 +19,11 @@
     },
     "devDependencies": {
         "axios": "^0.25",
+        "browser-sync": "^2.27.7",
+        "browser-sync-webpack-plugin": "^2.3.0",
         "laravel-mix": "^6.0.43",
         "lodash": "^4.17.19",
+        "npm-run-all": "^4.1.5",
         "postcss": "^8.1.14",
         "resolve-url-loader": "^5.0.0",
         "sass": "^1.49.8",
