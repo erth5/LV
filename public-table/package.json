@@ -1,6 +1,7 @@
 {
     "private": true,
     "scripts": {
+        "fg": "npm run watch-poll",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
@@ -13,6 +14,11 @@
         "axios": "^0.25",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.49.8",
+        "sass-loader": "^12.1.0",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.5.5"
     }
 }

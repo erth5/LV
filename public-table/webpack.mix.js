@@ -11,7 +11,19 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.sass('resources/css/app.sass', 'public/css')
+    .sourceMaps();
+
+mix.ts('resources/js/app.ts', 'public/js')
+    .sourceMaps();
+
+// Tailwind expanded without sass
+/*
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
-        //
+        require('tailwindcss')
     ]);
+*/
+
+// sync without reload, load localhost:3000
+//mix.browserSync('http://127.0.0.1:8000/');

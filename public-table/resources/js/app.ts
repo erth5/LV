@@ -1,1 +1,2 @@
+// @ts-ignore
 require('./bootstrap');
