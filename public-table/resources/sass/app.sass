@@ -1,0 +1,115 @@
+@import "conf"
+@import "color"
+body
+    background-color: var(--bg)
+    margin: 0
+
+p, h1, h2, h3, h4, h5, h6, div
+    color: var(--text)
+    font-family: bold, sans-serif
+
+
+// Main Navigation
+.topnav
+    width: 100%
+    @extend %bg_nav
+    position: sticky
+    //Heftet oben an
+    overflow: hidden
+    //Entfernt Abstand ueber Menue
+    top: 0
+    // float: left  macht Abstand ueber navbar - Fehlerquelle
+    a
+        display: block
+        color: var(--text)
+        float: left
+        width: 16.666%
+        text-align: center
+        padding: 14px 14px
+        text-decoration: none
+        font-size: 20px
+        font-family: sans-serif bold
+    a+a
+        border-left: dotted 1px black
+
+    a.active
+        background-color: $primary
+        color: var(--text)
+
+    a:hover
+        background-color: lighten($primary, 20)
+        color: $comp
+
+.center
+    text-align: center
+
+// Content
+table
+    background-color: black
+    font-family: arial, sans-serif
+    border-collapse: collapse
+    width: 100%
+
+td, th
+    border: 1px solid gray
+    padding: 8px
+
+tr
+    background-color: darken($secondary, 20)
+    color: white
+
+tr:nth-child(even)
+    background-color: $secondary
+
+// normalizing
+ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    overflow: hidden
+    background-color: var(--bg)
+
+li
+    float: left
+
+    a
+        display: block
+        color: black
+        text-align: center
+        padding: 14px 16px
+        text-decoration: none
+
+        &hover:not(.active)
+            background-color: $primary
+
+    .active
+        background-color: $primary
+
+    &last-child
+        border-right: none
+
+
+input[type=submit]
+    width: 100%
+    cursor: pointer
+    padding: 14px 12px
+    margin: 8px 0
+    border-radius: 4px
+    background-color: $secondary
+
+
+input[type=submit]:hover
+    background-color: lighten($primary, 20)
+
+input[type=text], select
+    width: 100%
+    padding: 10px 20px
+    margin: 0
+    display: inline-block
+    border: 1px solid #ccc
+    box-sizing: border-box
+
+
+
+
+

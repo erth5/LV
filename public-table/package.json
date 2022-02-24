@@ -1,7 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "fg": "npm run watch-poll",
+        "fg": "php artisan serve",
+        "bg": "npm run watch-poll",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",

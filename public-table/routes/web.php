@@ -15,28 +15,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [Start::class, 'index']);
+// Main
+Route::get('/', function (){
+    return view('layout');
+});
 
+// tables as Controllers
 Route::get('/table', [TableController::class, 'index']);
 
-/*
-Route::get('/table', function () {
-    return view('sites/table');
+// prepare: tables as blades
+Route::get('/public', function () {
+    return view('sites.public');
 });
-*/
+Route::get('/public', function () {
+    return view('sites/public');
+});
+Route::get('/public', function () {
+    return view('sites.public');
+});
 
+// tables simple
 Route::get('/contact', function () {
     return view('sites/contact');
 });
 
 Route::get('/about', function () {
-    return view('sites/about');
-});
-
-
-Route::get('/test', function () {
-    return view('subfolder.info');
-});
-Route::get('/start', function () {
-    return view('layout');
+    return view('sites.about');
 });

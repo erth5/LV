@@ -11,10 +11,15 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.sass('resources/css/app.sass', 'public/css')
+/*
+Automatische Ordnerwahl
+Source: Root Verzeichniss
+Destination: public Ordner
+ */
+mix.sass('resources/sass/app.sass', '/app.css')
     .sourceMaps();
 
-mix.ts('resources/js/app.ts', 'public/js')
+mix.ts('resources/ts/app.ts', '/app.js')
     .sourceMaps();
 
 // Tailwind expanded without sass
