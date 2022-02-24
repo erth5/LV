@@ -18,9 +18,16 @@
     <script src="js/app.js" defer></script>
 
 </head>
-<!--<body onload="script();">-->
 <body>
+@include('components/menue')
 
+@yield('content')
+
+<h2 class="center">
+    @isset($openingText)
+        {{$openingText}}
+    @endisset
+</h2>
 </body>
 <!---->
 </html>
