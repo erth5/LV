@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ChainTController;
 use App\Http\Controllers\PublicTController;
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,3 +43,6 @@ Route::get('/about', function () {
     return view('sites.about');
 })->name('about');
 
+Route::get('session/get',[SessionController::class, 'accessSessionData']);
+Route::get('session/set',[SessionController::class, 'storeSessionData']);
+Route::get('session/remove',[SessionController::class, 'deleteSessionData']);
