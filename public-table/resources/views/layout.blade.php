@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home</title>
+    <title>@yield('title', 'Home')</title>
 
     <!-- Fonts -->
 
@@ -19,17 +19,9 @@
 
 </head>
 <body>
-@include('comp/menue')
 
-@yield('content')
-
-
-@section('test')
-    <H1>This is test</H1>
-@show
-
-
-@section('start')
+<!-- "functions" -->
+@section('content')
     <h1 class="center">please choose a tab</h1>
     <div id="bottom">
         <p class="center"><!--
@@ -39,13 +31,10 @@
     </div>
 @endsection
 
-@yield('start')
+@include('comp/menue')
 
-<h2 class="center">
-    @isset($openingText)
-        {{$openingText}}
-    @endisset
-</h2>
+@yield('content')
+
 </body>
 <!---->
 </html>

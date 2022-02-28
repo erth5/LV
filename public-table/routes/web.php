@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\Start;
-use App\Http\Controllers\TableController;
+use App\Http\Controllers\PublicTController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,17 +20,16 @@ Route::get('/', function (){
 });
 
 // tables as Controllers
-Route::get('/table', [TableController::class, 'index']);
+Route::get('/public', [PublicTController::class, 'index']);
+
+
 
 // prepare: tables as blades
-Route::get('/public', function () {
-    return view('sites.public');
+Route::get('/calendar', function () {
+    return view('sites/calendar');
 });
-Route::get('/public', function () {
-    return view('sites/public');
-});
-Route::get('/public', function () {
-    return view('sites.public');
+Route::get('/different', function () {
+    return view('sites.different');
 });
 
 // tables simple

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('Home', 'Table')
+@section('title', 'Table')
 @section('content')
 
 <?php /*
@@ -15,13 +15,13 @@
     @endforeach
 */?>
 
-    <div class="center">
-        <h1>This is public free data table number one</h1>
-    </div>
+<div class="center">
+    <h1>This is public free data table number one</h1>
+</div>
 
-    <!-- Project tabeler static -->
-    <input type="submit" value="Submit">
-    <table>
+<!-- Project tabeler static -->
+<input type="submit" value="Submit" name="submit_button">
+<table>
         <tr>
             <th>Date</th>
             <th>User(auto)</th>
@@ -51,25 +51,38 @@
             <td>{{$openingText}}</td>
             <td>{{$openingText}}</td>
         </tr>
-    </table>
+</table>
 
-
-    <table>
+<table>
         <tr>
             <th>Date</th>
-            <th>User(auto)</th>
+            <th>editor(auto)</th>
             <th>Word1</th>
             <th>Word2</th>
             <th>Word3</th>
         </tr>
-        @foreach($data as $dat)
-            <td>{{$dat->user}}</td>
-            <td>{{$dat->word1}}</td>
-            <td>{{$dat->word2}}</td>
-            <td>{{$dat->word3}}</td>
+
+        @foreach($data as $column)
+            <tr>
+                <td><form>
+                        <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->timestamps}}">
+                    </form></td>
+                <td><form>
+                        <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->editor}}">
+                    </form></td>
+                <td><form>
+                        <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->word1}}">
+                    </form></td>
+                <td><form>
+                        <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->word2}}">
+                    </form></td>
+                <td><form>
+                        <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->word3}}">
+                    </form></td>
+            </tr>
         @endforeach
-    </table>
-    <input type="submit" value="Submit">
+</table>
+<input type="submit" value="Submit" name="submit_button">
 
 @endsection
 
