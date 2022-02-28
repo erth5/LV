@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('public_t', function (Blueprint $table) {
+        Schema::create('public_t_s', function (Blueprint $table) {
             $table->increments('id')->unique();
             // $table->primary('id'); //Automatic
             $table->timestamps();

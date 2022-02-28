@@ -15,6 +15,7 @@ class PublicTSeeder extends Seeder
      */
     public function run()
     {
+        // only DatabaseSeeders works
         PublicT::factory(3)->create();
     }
 }

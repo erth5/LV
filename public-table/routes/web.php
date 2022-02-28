@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChainTController;
 use App\Http\Controllers\PublicTController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,14 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Main
-Route::get('/', function (){
+Route::get('/', function () {
     return view('layout');
 });
 
 // tables as Controllers
 Route::get('/public', [PublicTController::class, 'index']);
-
-
+Route::get('/chain', [ChainTController::class, 'index']);
 
 // prepare: tables as blades
 Route::get('/calendar', function () {
@@ -32,7 +32,7 @@ Route::get('/different', function () {
     return view('sites.different');
 });
 
-// tables simple
+// table simples
 Route::get('/contact', function () {
     return view('sites/contact');
 });

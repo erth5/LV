@@ -24,14 +24,21 @@ p, h1, h2, h3, h4, h5, h6, div
         display: block
         color: var(--text)
         float: left
-        width: 16.666%
+        //width: 16.66%    //6 tabs
+        width: auto
+        @media only screen and (min-width: 1100px)
+            width: 14.28% //7 tabs
+        @media only screen and (max-width: 400px)
+            float: none
         text-align: center
         padding: 14px 14px
         text-decoration: none
         font-size: 20px
         font-family: sans-serif bold
+        //border-bottom: dotted 1px $secondary
     a+a
-        border-left: dotted 1px $secondary
+        //border-left: dotted 0.5px $secondary
+        //border-right: dotted 1px $secondary
 
     a.active
         background-color: $primary
@@ -39,7 +46,7 @@ p, h1, h2, h3, h4, h5, h6, div
 
     a:hover
         background-color: lighten($primary, 20)
-        color: $comp
+        color: var(--text)
 
 .center
     text-align: center
@@ -92,10 +99,7 @@ input[type=submit]
     width: 100%
     cursor: pointer
     padding: 14px 12px
-    margin: 8px 0
-    border-radius: 4px
     background-color: $secondary
-
 
 input[type=submit]:hover
     background-color: lighten($secondary, 20)
@@ -108,7 +112,10 @@ input[type=text], select
     border: 1px solid #ccc
     box-sizing: border-box
 
-
-
-
-
+.flya
+    border-radius: 5px 5px 0 0
+.dropa
+    border-radius: 0 0 5px 5px
+.botha, .uniqua
+    border-radius: 5px
+    margin: 8px 0

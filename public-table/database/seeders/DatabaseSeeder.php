@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\ChainT;
 use App\Models\PublicT;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -18,5 +19,6 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(3)->create();
         PublicT::factory(3)->create();
+        ChainT::factory(3)->create();
     }
 }

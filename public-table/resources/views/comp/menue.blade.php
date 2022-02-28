@@ -1,6 +1,7 @@
 <!-- Top navigation -->
 <nav class="topnav">
     <a href="public">Public Table</a>
+    <a href="chain">Chain Table</a>
     <a href="calendar">Calendar Table</a>
     <a href="different">Different Table</a>
     <a href="contact">Contact</a>

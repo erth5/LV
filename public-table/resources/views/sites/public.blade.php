@@ -1,17 +1,16 @@
 @extends('layout')
 
-@section('title', 'Table')
+@section('title', 'Public Table')
 @section('content')
 
     <div class="center">
-        <h1>This is the public Table number one</h1>
+        <h1>This is the public Table</h1>
     </div>
 
-<!-- Project tabeler static -->
-<input type="submit" value="Submit" name="submit_button">
+    <!-- Project tabeler dynamic -->
+    <input type="submit" value="Submit" name="submit_button" class="uniqua">
 
-
-<table>
+    <table>
         <tr>
             <th>Date</th>
             <th>editor(auto)</th>
@@ -22,25 +21,35 @@
 
         @foreach($data as $column)
             <tr>
-                <td><form>
+                <td>
+                    <form>
                         <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->timestamps}}">
-                    </form></td>
-                <td><form>
+                    </form>
+                </td>
+                <td>
+                    <form>
                         <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->editor}}">
-                    </form></td>
-                <td><form>
+                    </form>
+                </td>
+                <td>
+                    <form>
                         <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->word1}}">
-                    </form></td>
-                <td><form>
+                    </form>
+                </td>
+                <td>
+                    <form>
                         <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->word2}}">
-                    </form></td>
-                <td><form>
+                    </form>
+                </td>
+                <td>
+                    <form>
                         <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->word3}}">
-                    </form></td>
+                    </form>
+                </td>
             </tr>
         @endforeach
-</table>
-<input type="submit" value="Submit" name="submit_button">
+    </table>
+    <input type="submit" value="Submit" name="submit_button" class="dropa">
 
 @endsection
 
