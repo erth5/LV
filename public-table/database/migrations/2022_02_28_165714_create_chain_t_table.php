@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('chain_t_s', function (Blueprint $table) {
             $table->increments('id')->unique();
             $table->timestamps();
+            $table->date('date');
             $table->string('editor')->default('unknown');
             $table->string('word');
         });

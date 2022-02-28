@@ -17,6 +17,7 @@ class ChainTFactory extends Factory
     public function definition()
     {
         return [
+            'date' => $this->faker->date(),
             'editor' => $this->faker->name(),
             'word' => $this->faker->slug(),
         ];

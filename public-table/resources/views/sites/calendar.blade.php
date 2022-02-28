@@ -1,15 +1,26 @@
-@php
-    // Project date finder
-    /*
-    Week
-    User(auto ID and manual)
+@extends('layout')
+@section('title', 'Calendar')
 
-    Monday
-    Tuesday
-    Wednesday
-    Thursday
-    Friday
-    Saturday
-    Sunday
-    */
-@endphp
+@section('content')
+
+    @php
+        // Project date finder
+        /*
+        Week
+        User(auto ID and manual)
+
+        Monday
+        Tuesday
+        Wednesday
+        Thursday
+        Friday
+        Saturday
+        Sunday
+        */
+    @endphp
+
+@endsection
+
+
+
+

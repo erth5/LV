@@ -10,6 +10,7 @@ class ChainT extends Model
     use HasFactory;
 
     protected $fillable = [
+        'date',
         'editor',
         'word',
     ];

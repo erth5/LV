@@ -1,7 +1,7 @@
 @extends('layout')
+@section('title', 'Contact')
 
 @section('content')
 
-
 @endsection
-@section('title', 'Contact')
+

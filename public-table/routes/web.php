@@ -21,22 +21,24 @@ Route::get('/', function () {
 });
 
 // tables as Controllers
-Route::get('/public', [PublicTController::class, 'index']);
-Route::get('/chain', [ChainTController::class, 'index']);
+Route::get('/public', [PublicTController::class, 'index'])->name('public');
+Route::get('/chain', [ChainTController::class, 'index'])->name('chain');
 
 // prepare: tables as blades
 Route::get('/calendar', function () {
     return view('sites/calendar');
-});
+})->name('calendar');
+
 Route::get('/different', function () {
     return view('sites.different');
-});
+})->name('different');
 
 // table simples
 Route::get('/contact', function () {
     return view('sites/contact');
-});
+})->name('contact');
 
 Route::get('/about', function () {
     return view('sites.about');
-});
+})->name('about');
+

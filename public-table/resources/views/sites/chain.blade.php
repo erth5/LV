@@ -1,6 +1,6 @@
 @extends('layout')
-
 @section('title', 'Chain')
+
 @section('content')
 
     <div class="center">
@@ -16,7 +16,7 @@
         </tr>
         @foreach($data as $column)
         <tr>
-            <td>{{$column->timestamps}}</td>
+            <td>{{$column->date}}</td>
             <td>{{$column->editor}}</td>
             <td>{{$column->word}}</td>
         </tr>
