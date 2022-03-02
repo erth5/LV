@@ -119,6 +119,9 @@ run server
 php artisan serve
 ````
 
+# Info
+tsconfig.json can configure for all projects, is sorted in one for one
+
 A all->test angular? B bootstrap C ~~calendar~~ D ~~diffrent+-~~ E F frontend G gulp H hy I J jetstream K L M N O P public_table Q R react S T template U V vue W (tail)wind X Y Z
 
 default version: 9.1.0

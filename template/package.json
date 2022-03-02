@@ -7,7 +7,7 @@
     "scripts": {
         "win": "start npm run watch-poll && start php artisan serve",
         "lx": "start npm run watch-poll & start php artisan serve",
-        "bg": "nohup start npm run watch-poll & nohup start php artisan serve",
+        "bg": "npm run watch",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
