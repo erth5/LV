@@ -8,6 +8,7 @@
         "win": "start npm run watch-poll && start php artisan serve",
         "lx": "start npm run watch-poll & start php artisan serve",
         "bg": "npm run watch",
+        "fg": "start php artisan serve",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
