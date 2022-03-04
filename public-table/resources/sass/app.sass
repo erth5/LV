@@ -60,8 +60,8 @@ table
     tr
         @extend %bg_table
         color: white
-        td, th
-            border: 1px solid $sympathizer0
+        th, td
+            border: 1px solid $quintsympathizer0
             padding: 8px
 
 tr:nth-child(even)
@@ -99,7 +99,11 @@ input[type=submit]
     width: 100%
     cursor: pointer
     padding: 14px 12px
+    color: white
     background-color: $secondary
+    font-family: sans-serif bold
+    font-style: inherit
+    font-size: large
 
 input[type=submit]:hover
     background-color: lighten($secondary, 20)
@@ -111,6 +115,7 @@ input[type=text], select
     display: inline-block
     border: 1px solid #ccc
     box-sizing: border-box
+    font-family: arial, sans-serif
 
 .flya
     border-radius: 5px 5px 0 0
@@ -119,3 +124,7 @@ input[type=text], select
 .botha, .uniqua
     border-radius: 5px
     margin: 8px 0
+
+.freespace50
+    height: 50px
+

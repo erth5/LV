@@ -35,6 +35,7 @@
 
 @yield('content')
 
+@include('comp/footer')
 </body>
 <!---->
 </html>

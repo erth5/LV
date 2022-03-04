@@ -8,48 +8,47 @@
     </div>
 
     <!-- Project tabeler dynamic -->
-    <input type="submit" value="Submit" name="submit_button" class="uniqua">
+    <form method="post" action="{{url('/show-public')}}">
+        <input type="submit" value="Show First Line only" name="submit_button" class="uniqua">
+    </form>
 
+    <form method="post" action={{url('/update-public')}}>
     <table>
         <tr>
             <th>Date</th>
-            <th>editor(auto)</th>
-            <th>Word1</th>
-            <th>Word2</th>
-            <th>Word3</th>
+            <th>Autor</th>
+            <th>Argument 1</th>
+            <th>Argument 2</th>
+            <th>Argument 3</th>
         </tr>
 
         @foreach($data as $column)
             <tr>
+                <td>{{$column->date}}</td>
                 <td>
-                    <form>
-                        <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->timestamps}}">
-                    </form>
-                </td>
-                <td>
-                    <form>
+                    <label>
                         <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->editor}}">
-                    </form>
+                    </label>
                 </td>
                 <td>
-                    <form>
+                    <label>
                         <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->word1}}">
-                    </form>
+                    </label>
                 </td>
                 <td>
-                    <form>
+                    <label>
                         <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->word2}}">
-                    </form>
+                    </label>
                 </td>
                 <td>
-                    <form>
+                    <label>
                         <input type="text" maxlength="255" autocomplete="on" placeholder="{{$column->word3}}">
-                    </form>
+                    </label>
                 </td>
             </tr>
         @endforeach
     </table>
-    <input type="submit" value="Submit" name="submit_button" class="dropa">
-
+    <input type="submit" value="Submit Data" name="submit_button" class="dropa">
+    </form>
 @endsection
 

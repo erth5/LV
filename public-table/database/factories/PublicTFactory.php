@@ -17,6 +17,7 @@ class PublicTFactory extends Factory
     public function definition()
     {
         return [
+            'date' => $this->faker->date(),
             'editor' => $this->faker->name(),
             'word1' => $this->faker->text(),
             'word2' => $this->faker->word(),

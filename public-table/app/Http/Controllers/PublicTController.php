@@ -48,7 +48,10 @@ class PublicTController extends Controller
      */
     public function show(PublicT $publicT)
     {
-        //
+        $rowID = 1;
+        $firstrow = PublicT::find($rowID);
+        dd($firstrow);
+        return view('sites.public', compact('firstrow'));
     }
 
     /**
@@ -71,7 +74,12 @@ class PublicTController extends Controller
      */
     public function update(Request $request, PublicT $publicT)
     {
-        //
+        $data = PublicT::all();
+
+        //foreach ($data as $column)
+        //    if ($data)
+
+        return view('sites.public', compact('data'));
     }
 
     /**

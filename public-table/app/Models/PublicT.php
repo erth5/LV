@@ -10,6 +10,7 @@ class PublicT extends Model
     use HasFactory;
 
     protected $fillable = [
+        'date',
         'editor',
         'word1',
         'word2',

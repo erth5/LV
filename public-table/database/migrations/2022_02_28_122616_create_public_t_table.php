@@ -17,6 +17,7 @@ return new class extends Migration
             $table->increments('id')->unique();
             // $table->primary('id'); //Automatic
             $table->timestamps();
+            $table->date('date');
             $table->string('editor')->default('unknown');
             $table->string('word1');
             $table->string('word2');
