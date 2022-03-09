@@ -15,7 +15,7 @@
         background-color: #333;
 
         /*set to running server*/
-        background: #fff url(./norway-4970080.jpg)
+        background: #fff url(../norway-4970080.jpg)
         center center/auto fixed;
         /*background: #fff url(norway-4970080.jpg)
         center center/bottom no-repeat;*/

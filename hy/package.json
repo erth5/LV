@@ -1,6 +1,8 @@
 {
     "private": true,
     "scripts": {
+        "bg": "no-mix-module-installed",
+        "fg": "php artisan serve",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
