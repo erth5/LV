@@ -122,7 +122,27 @@ php artisan serve
 # Info
 tsconfig.json can configure for all projects, is sorted in one for one
 
-A angular B bootstrap C ~~calendar~~ D ~~diffrent+-~~ E F frontend G gulp H hy I J jetstream K L M N O P public_table Q R react S T template U V vue W (tail)wind X Y Z
+A angular
+B bootstrap
+C ~~calendar~~ cashier
+D ~~diffrent+-~~ dusk
+E envoyer
+F frontend forge
+G gulp
+H hy horizon
+I
+J jetstream
+K L M
+N nova
+O
+P public_table
+Q R react
+S s_apps (sail spark scout socialite sanctum)
+T template (TS SASS) -> mix telescope
+U
+V vue vapier valet
+W (tail)wind (can use by jetstream)
+X Y Z
 
 default version: 9.1.0
 
