@@ -21,7 +21,7 @@ Route::get('/', function () {
     return view('layout');
 });
 
-// tables as Controllers
+// tables as Controllers        TODO remove specific uri name
 Route::get('/public', [PublicTController::class, 'index'])->name('public');
 Route::post('/update-public', [PublicTController::class, 'update']);
 Route::post('/show-public', [PublicTController::class, 'show']);

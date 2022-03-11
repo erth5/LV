@@ -12,7 +12,7 @@
         @csrf
         <table>
             <tr>
-                <th>Date</th>
+                <th>Save Date</th>
                 <th>Autor Session ID</th>
                 <th>Messages</th>
             </tr>

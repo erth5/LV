@@ -3,3 +3,7 @@
         {{$openingText}}
     @endisset
 </h2>
+
+
+
+<form method="post" action="{{url('/show-public')}}">

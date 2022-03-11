@@ -18,7 +18,7 @@ class ChainTFactory extends Factory
     {
         return [
             'date' => $this->faker->date(),
-            'editor' => $this->faker->name(),
+            'editor' => $this->faker->password(40, 40),
             'word' => $this->faker->slug(),
         ];
     }
