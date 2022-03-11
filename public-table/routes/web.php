@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CalendarTController;
 use App\Http\Controllers\ChainTController;
 use App\Http\Controllers\PublicTController;
 use App\Http\Controllers\SessionController;
@@ -24,16 +25,15 @@ Route::get('/', function () {
 // tables as Controllers        TODO remove specific uri name
 Route::get('/public', [PublicTController::class, 'index'])->name('public');
 Route::post('/update-public', [PublicTController::class, 'update']);
-Route::post('/show-public', [PublicTController::class, 'show']);
+//Route::post('/show-public', [PublicTController::class, 'show']);
 
 Route::get('/chain', [ChainTController::class, 'index'])->name('chain');
 Route::post('/store-chain', [ChainTController::class, 'store']);
 
-// prepare: tables as blades
-Route::get('/calendar', function () {
-    return view('sites/calendar');
-})->name('calendar');
+Route::get('/calenar', [CalendarTController::class, 'index'])->name('calendar');
+Route::post('/update-calendar', [CalendarTController::class, 'update'])->name('calendar');
 
+// prepare: tables as blades
 Route::get('/different', function () {
     return view('sites.different');
 })->name('different');

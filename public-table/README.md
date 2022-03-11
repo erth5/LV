@@ -6,6 +6,8 @@ just a namespace.
 ## troubleshooting
 php artisan cache:clear
 
+# info
+s muss nicht angehangen werden
 ## Database
 php artisan db:seed
 ### public
@@ -22,8 +24,14 @@ php artisan make:factory ChainTFactory --model=ChainT
 php artisan make:seeder ChainTSeeder
 ### calendar
 php artisan make:controller CalendarTController --model=CalendarT
-php artisan make:migration create_Calendar_t_s_table
+php artisan make:migration create_calendar_t_table
 
 php artisan make:factory CalendarTFactory --model=CalendarT
 php artisan make:seeder CalendarTSeeder
 
+### difference
+php artisan make:controller DifferentTController --model=DifferentT
+php artisan make:migration create_different_t_table
+
+php artisan make:factory DifferentTFactory --model=DifferentT
+php artisan make:seeder DifferentTSeeder
