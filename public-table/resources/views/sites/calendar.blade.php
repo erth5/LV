@@ -1,29 +1,12 @@
 @extends('layout')
 @section('title', 'Calendar')
-
 @section('content')
-
-    @php
-        // Project date finder
-        /*
-        Week
-        User(auto ID and manual)
-
-        Monday
-        Tuesday
-        Wednesday
-        Thursday
-        Friday
-        Saturday
-        Sunday
-        */
-    @endphp
 
     <div class="center">
         <h1>This is a Calendar</h1>
     </div>
 
-
+    <form method="post" action="{{url('/update-calendar')}}">
         @csrf
         <table>
             <tr>
@@ -36,26 +19,27 @@
                 <th>Sunday</th>
             </tr>
 
-
-        @foreach($data as $dat)
             <tr>
                 <td>
-                    <label>
+                    <label >
                         <input type="text" name="editor" maxlength="255" autocomplete="on" placeholder="I`m here">
                     </label>
                 </td>
-                <dt>
+                <td>
                     <label>
-                        <input type="radio" name="">
+                        <input type="checkbox" name="chcbox">
                     </label>
-                </dt>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="chcbox">
+                    </label>
+                </td>
             </tr>
-        @endforeach
+
         </table>
-
-    <form method="post" action="{{url('/update-table')}}">
+        <input class="dropa" type="submit" value="Save Data" name="submit_button">
     </form>
-
 @endsection
 
 

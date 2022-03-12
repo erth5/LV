@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::factory(3)->create();
-        // PublicT::factory(3)->create();   //const=12
-        //ChainT::factory(3)->create();
+        PublicT::factory(12)->create();   //const=12
+        ChainT::factory(3)->create();
         CalendarT::factory(3)->create();
     }
 }

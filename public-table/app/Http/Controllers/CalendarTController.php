@@ -15,6 +15,7 @@ class CalendarTController extends Controller
     public function index()
     {
         $data = CalendarT::all();
+        dd($data);
         return view('sites.calendar', compact('data'));
     }
 
@@ -80,6 +81,7 @@ class CalendarTController extends Controller
             }
             // TODO
         }
+        dd($data);
         return view('sites.calendar', compact('data'));
     }
 

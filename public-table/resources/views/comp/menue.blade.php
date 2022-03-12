@@ -4,9 +4,9 @@
        href="public"><span>Public Table</span></a>
     <a class="{{ (\Request::route()->getName() == 'chain') ? 'active' : '' }}"
        href="chain">Chain Table</a>
-
     <a class="{{ (\Request::route()->getName() == 'calendar') ? 'active' : '' }}"
        href="calendar">Calendar Table</a>
+
     <a class="{{ (\Request::route()->getName() == 'different') ? 'active' : '' }}"
        href="different">Different Table</a>
 

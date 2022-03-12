@@ -31,7 +31,7 @@ Route::get('/chain', [ChainTController::class, 'index'])->name('chain');
 Route::post('/store-chain', [ChainTController::class, 'store']);
 
 Route::get('/calendar', [CalendarTController::class, 'index'])->name('calendar');
-Route::post('/update-calendar', [CalendarTController::class, 'update'])->name('calendar');
+Route::post('/update-calendar',[CalendarTController::class, 'update']);
 
 // prepare: tables as blades
 Route::get('/different', function () {
