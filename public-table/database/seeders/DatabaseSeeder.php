@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\CalendarT;
 use App\Models\ChainT;
 use App\Models\PublicT;
 use App\Models\User;
@@ -18,7 +19,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::factory(3)->create();
-        PublicT::factory(3)->create();
-        ChainT::factory(3)->create();
+        // PublicT::factory(3)->create();   //const=12
+        //ChainT::factory(3)->create();
+        CalendarT::factory(3)->create();
     }
 }

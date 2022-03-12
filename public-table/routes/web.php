@@ -30,7 +30,7 @@ Route::post('/update-public', [PublicTController::class, 'update']);
 Route::get('/chain', [ChainTController::class, 'index'])->name('chain');
 Route::post('/store-chain', [ChainTController::class, 'store']);
 
-Route::get('/calenar', [CalendarTController::class, 'index'])->name('calendar');
+Route::get('/calendar', [CalendarTController::class, 'index'])->name('calendar');
 Route::post('/update-calendar', [CalendarTController::class, 'update'])->name('calendar');
 
 // prepare: tables as blades

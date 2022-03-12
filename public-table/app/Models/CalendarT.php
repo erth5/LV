@@ -5,15 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class PublicT extends Model
+class CalendarT extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'date',
         'editor',
-        'word1',
-        'word2',
-        'word3'
+        'mo',
+        'tu',
+        'we',
+        'th',
+        'fr',
+        'sa',
+        'su'
     ];
 }
