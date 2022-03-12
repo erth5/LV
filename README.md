@@ -87,7 +87,10 @@ clear cache
 ````shell
 php artisan route:cache
 ````
-
+regenerate vendor folder
+````shell
+composer update
+````
 ## setup npm
 ````shell
 npm init
@@ -151,3 +154,6 @@ X Y Z
 base version: 9.1.0
 
 
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
