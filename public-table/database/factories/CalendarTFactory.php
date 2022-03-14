@@ -24,7 +24,7 @@ class CalendarTFactory extends Factory
             'th' => $this->faker->boolean(),
             'fr' => $this->faker->boolean(),
             'sa' => $this->faker->boolean(),
-            'su' => $this->faker->boolean()
+            'su' => $this->faker->boolean(),
         ];
     }
 }

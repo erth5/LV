@@ -5,26 +5,30 @@ html, body
     &.light
         --text: black
         --bg: aliceblue
+
         %bg_nav
             background-color: darken(aliceblue, 10)
 
         // variant1
         %bg_table
             background-color: $secondary
+
         %bg_table_even
             background-color: lighten($secondary, 10)
-        // variant2-not working
-        //$bg-table: $secondary
-        //$bg-table_even: lighten($secondary, 10)
+    // variant2-not working
+    //$bg-table: $secondary
+    //$bg-table_even: lighten($secondary, 10)
 
     &.dark
         --text: white
         --bg: #333
+
         %bg_nav
             background-color: lighten(#333, 5)
 
         //variant1
         %bg_table
             background-color: darken($secondary, 10)
+
         %bg_table_even
             background-color: $secondary

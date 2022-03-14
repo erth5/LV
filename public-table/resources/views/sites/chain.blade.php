@@ -33,10 +33,10 @@
                 </td>
             </tr>
         </table>    <!--Wordbreak Funktioniert hier nicht -->
-        <input  style="word-break: break-all" type="submit" value="Submit" name="submit_button" class="dropa">
+        <input style="word-break: break-all" type="submit" value="Submit" name="submit_button" class="dropa">
     </form>
 
     @isset($dopple_user_warning)
-    <h2 class="center">{{$dopple_user_warning}}</h2>
+        <h2 class="center">{{$dopple_user_warning}}</h2>
     @endisset
 @endsection

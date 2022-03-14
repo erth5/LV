@@ -27,7 +27,8 @@ p, h1, h2, h3, h4, h5, h6, div
         //width: 16.66%    //6 tabs
         width: auto
         @media only screen and (min-width: 1100px)
-            width: 14.28% //7 tabs
+            width: 14.28%
+        //7 tabs
         @media only screen and (max-width: 400px)
             float: none
         text-align: center
@@ -35,10 +36,10 @@ p, h1, h2, h3, h4, h5, h6, div
         text-decoration: none
         font-size: 20px
         font-family: sans-serif bold
-        //border-bottom: dotted 1px $secondary
-    a+a
-        //border-left: dotted 0.5px $secondary
-        //border-right: dotted 1px $secondary
+    //border-bottom: dotted 1px $secondary
+    a + a
+    //border-left: dotted 0.5px $secondary
+    //border-right: dotted 1px $secondary
 
     a.active
         background-color: $primary
@@ -57,18 +58,23 @@ table
     font-family: arial, sans-serif
     border-collapse: collapse
     width: 100%
+
     tr
         @extend %bg_table
         color: white
+
         th, td
             border: 1px solid $quintsympathizer0
             padding: 2px
+
         th
             padding-top: 10px
             padding-bottom: 10px
 
-.sub_unique // only to delete space
-    width: 5%
+.sub_unique
+    // only to delete space
+       width: 5%
+
 .only_out
     width: 5%
 
@@ -128,8 +134,10 @@ input[type=text], select
 
 .flya
     border-radius: 5px 5px 0 0
+
 .dropa
     border-radius: 0 0 5px 5px
+
 .botha, .uniqua
     border-radius: 5px
     margin: 8px 0

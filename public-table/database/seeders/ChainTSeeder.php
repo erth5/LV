@@ -15,7 +15,7 @@ class ChainTSeeder extends Seeder
      */
     public function run()
     {
-        // only DatabaseSeeders works
+        // php artisan db:seed --class=ChainTSeeder
         ChainT::factory(3)->create();
     }
 }

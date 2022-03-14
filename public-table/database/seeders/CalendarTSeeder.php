@@ -15,6 +15,7 @@ class CalendarTSeeder extends Seeder
      */
     public function run()
     {
+        // php artisan db:seed --class=CalendarTSeeder
         CalendarT::factory(3)->create();
     }
 }

@@ -15,7 +15,7 @@ class PublicTSeeder extends Seeder
      */
     public function run()
     {
-        // only DatabaseSeeders works
+        // php artisan db:seed --class=PublicTSeeder
         PublicT::factory(3)->create();
     }
 }

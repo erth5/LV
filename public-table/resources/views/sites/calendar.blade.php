@@ -21,7 +21,7 @@
 
             <tr>
                 <td>
-                    <label >
+                    <label>
                         <input type="text" name="editor" maxlength="255" autocomplete="on" placeholder="I`m here">
                     </label>
                 </td>

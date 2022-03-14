@@ -33,7 +33,7 @@ class PublicTController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -44,7 +44,7 @@ class PublicTController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\PublicT  $publicT
+     * @param \App\Models\PublicT $publicT
      * @return \Illuminate\Http\Response
      */
     public function show(PublicT $publicT)
@@ -58,7 +58,7 @@ class PublicTController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\PublicT  $publicT
+     * @param \App\Models\PublicT $publicT
      * @return \Illuminate\Http\Response
      */
     public function edit(PublicT $publicT)
@@ -69,40 +69,40 @@ class PublicTController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\PublicT  $publicT
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\PublicT $publicT
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, PublicT $publicT)
     {
         $data = PublicT::all();
-        if (isset($_POST['submit_all_button'])){
+        if (isset($_POST['submit_all_button'])) {
             $current_line = 0;
 
-            foreach ($data as $dat){
+            foreach ($data as $dat) {
                 $current_line = $dat->id;
                 $changed = false;
 
-                $res = "editor".$current_line;
-                if ($request->$res != null){
+                $res = "editor" . $current_line;
+                if ($request->$res != null) {
                     $dat->editor = $request->$res;
                     $changed = true;
                 }
 
-                $res = "word1".$current_line;
-                if ($request->$res != null){
+                $res = "word1" . $current_line;
+                if ($request->$res != null) {
                     $dat->word1 = $request->$res;
                     $changed = true;
                 }
 
-                $res = "word2".$current_line;
-                if ($request->$res != null){
+                $res = "word2" . $current_line;
+                if ($request->$res != null) {
                     $dat->word2 = $request->$res;
                     $changed = true;
                 }
 
-                $res = "word3".$current_line;
-                if ($request->$res != null){
+                $res = "word3" . $current_line;
+                if ($request->$res != null) {
                     $dat->word3 = $request->$res;
                     $changed = true;
                 }
@@ -112,10 +112,11 @@ class PublicTController extends Controller
 
                 $save = $dat->saveOrFail();
             }
-        }elseif(isset($_POST['show_first_button'])){
+        } elseif (isset($_POST['show_first_button'])) {
             // TODO link to show method
-            $direct = PublicTController::class; 'show';
-        }else {  //Data per Line
+            $direct = PublicTController::class;
+            'show';
+        } else {  //Data per Line
             $line_number = -1;
             if (isset($_POST['submit_button_1']))
                 $line_number = 0;
@@ -147,8 +148,8 @@ class PublicTController extends Controller
             $currentLine = $dat->id;
             $dat->date = date(now());
 
-            $res = "editor".$currentLine;
-            if ($request->$res != null){
+            $res = "editor" . $currentLine;
+            if ($request->$res != null) {
                 $dat->editor = $request->$res;
                 /*
                 dd("gewählte Zeile:", $currentLine,
@@ -157,15 +158,15 @@ class PublicTController extends Controller
                 */
             }
 
-            $res = "word1".$currentLine;
+            $res = "word1" . $currentLine;
             if ($request->$res != null)
                 $dat->word1 = $request->$res;
 
-            $res = "word2".$currentLine;
+            $res = "word2" . $currentLine;
             if ($request->$res != null)
                 $dat->word2 = $request->$res;
 
-            $res = "word3".$currentLine;
+            $res = "word3" . $currentLine;
             if ($request->$res != null)
                 $dat->word3 = $request->$res;
             $save = $dat->saveOrFail();
@@ -176,7 +177,7 @@ class PublicTController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\PublicT  $publicT
+     * @param \App\Models\PublicT $publicT
      * @return \Illuminate\Http\Response
      */
     public function destroy(PublicT $publicT)

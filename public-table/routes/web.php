@@ -31,7 +31,7 @@ Route::get('/chain', [ChainTController::class, 'index'])->name('chain');
 Route::post('/store-chain', [ChainTController::class, 'store']);
 
 Route::get('/calendar', [CalendarTController::class, 'index'])->name('calendar');
-Route::post('/update-calendar',[CalendarTController::class, 'update']);
+Route::post('/update-calendar', [CalendarTController::class, 'update']);
 
 // prepare: tables as blades
 Route::get('/different', function () {
@@ -47,6 +47,6 @@ Route::get('/about', function () {
     return view('sites.about');
 })->name('about');
 
-Route::get('session/get',[SessionController::class, 'accessSessionData']);
-Route::get('session/set',[SessionController::class, 'storeSessionData']);
-Route::get('session/remove',[SessionController::class, 'deleteSessionData']);
+Route::get('session/get', [SessionController::class, 'accessSessionData']);
+Route::get('session/set', [SessionController::class, 'storeSessionData']);
+Route::get('session/remove', [SessionController::class, 'deleteSessionData']);

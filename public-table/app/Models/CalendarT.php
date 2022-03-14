@@ -17,6 +17,6 @@ class CalendarT extends Model
         'th',
         'fr',
         'sa',
-        'su'
+        'su',
     ];
 }

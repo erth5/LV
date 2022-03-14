@@ -15,11 +15,11 @@
             <th>Word</th>
         </tr>
         @foreach($data as $column)
-        <tr>
-            <td>{{$column->date}}</td>
-            <td>{{$column->editor}}</td>
-            <td>{{$column->word}}</td>
-        </tr>
+            <tr>
+                <td>{{$column->date}}</td>
+                <td>{{$column->editor}}</td>
+                <td>{{$column->word}}</td>
+            </tr>
         @endforeach
         <tr>
             <td>Timestamp</td>

@@ -33,7 +33,7 @@ class ChainTController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -51,8 +51,8 @@ class ChainTController extends Controller
         $session_ID = Cookie::get('laravel_session');
         $data = ChainT::all();
         $dopple_user_warning = 'You have alraedy write a line in this row';
-        foreach($data as $editor_ID)
-            if ($session_ID == $editor_ID->editor){
+        foreach ($data as $editor_ID)
+            if ($session_ID == $editor_ID->editor) {
                 return view('sites.chain', compact('data'), compact('dopple_user_warning'));
             }
         // save new message
@@ -69,7 +69,7 @@ class ChainTController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ChainT  $chainT
+     * @param \App\Models\ChainT $chainT
      * @return \Illuminate\Http\Response
      */
     public function show(ChainT $chainT)
@@ -80,7 +80,7 @@ class ChainTController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ChainT  $chainT
+     * @param \App\Models\ChainT $chainT
      * @return \Illuminate\Http\Response
      */
     public function edit(ChainT $chainT)
@@ -91,8 +91,8 @@ class ChainTController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\ChainT  $chainT
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\ChainT $chainT
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, ChainT $chainT)
@@ -103,7 +103,7 @@ class ChainTController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ChainT  $chainT
+     * @param \App\Models\ChainT $chainT
      * @return \Illuminate\Http\Response
      */
     public function destroy(ChainT $chainT)

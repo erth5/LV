@@ -21,17 +21,17 @@ const setClassToBody = () => {
 }
 
 // settings from locale storage available ?
-switch(localStorage.getItem('darkmode')){
+switch (localStorage.getItem('darkmode')) {
     case null:
         // First Visit = unavailable
         DARKMODE = window.matchMedia('(prefers-color-scheme: dark)').matches;
         localStorage.setItem('darkmode', String(DARKMODE))
         break;
     case 'true':
-        DARKMODE=true
+        DARKMODE = true
         break;
     case 'false':
-        DARKMODE=false
+        DARKMODE = false
         break;
     default:
         console.log("INFO: Unable to read theme preference from system")
@@ -46,24 +46,21 @@ const switchMode = () => {
     localStorage.setItem('darkmode', String(DARKMODE))
     setClassToBody();
     const input = document.getElementById('switch')
-    if (DARKMODE == true)
-        { // @ts-ignore
-            input?.innerText = "Lightmode"
-        }
-    if (DARKMODE == false)
-        { // @ts-ignore
-            input?.innerText = "Darkmode"
-        }
+    if (DARKMODE == true) { // @ts-ignore
+        input?.innerText = "Lightmode"
+    }
+    if (DARKMODE == false) { // @ts-ignore
+        input?.innerText = "Darkmode"
+    }
 };
 
 if (document.getElementById('switch') == null)
     console.log("INFO: no Theme Button found")
-else
-    { // @ts-ignore
-        const input = document.getElementById('switch')
-        // @ts-ignore
-        input.addEventListener('click', switchMode)
-        setClassToBody()
-    }
+else { // @ts-ignore
+    const input = document.getElementById('switch')
+    // @ts-ignore
+    input.addEventListener('click', switchMode)
+    setClassToBody()
+}
 
 //console.log("function js fin")

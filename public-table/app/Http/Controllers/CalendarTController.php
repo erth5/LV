@@ -16,7 +16,7 @@ class CalendarTController extends Controller
     {
         $data = CalendarT::all();
         dd($data);
-        return view('sites.calendar', compact('data'));
+        //return view('sites.calendar', compact('data'));
     }
 
     /**
@@ -32,7 +32,7 @@ class CalendarTController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -43,7 +43,7 @@ class CalendarTController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CalendarT  $calendarT
+     * @param \App\Models\CalendarT $calendarT
      * @return \Illuminate\Http\Response
      */
     public function show(CalendarT $calendarT)
@@ -54,7 +54,7 @@ class CalendarTController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CalendarT  $calendarT
+     * @param \App\Models\CalendarT $calendarT
      * @return \Illuminate\Http\Response
      */
     public function edit(CalendarT $calendarT)
@@ -65,18 +65,18 @@ class CalendarTController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CalendarT  $calendarT
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\CalendarT $calendarT
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, CalendarT $calendarT)
     {
         $data = CalendarT::all();
         $current_line = 0;
-        foreach ($data as $dat){
+        foreach ($data as $dat) {
             $current_line = $dat->id;
-            $res = "editor".$current_line;
-            if ($request->$res != null){
+            $res = "editor" . $current_line;
+            if ($request->$res != null) {
                 $dat->editor = $request->$res;
             }
             // TODO
@@ -88,7 +88,7 @@ class CalendarTController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CalendarT  $calendarT
+     * @param \App\Models\CalendarT $calendarT
      * @return \Illuminate\Http\Response
      */
     public function destroy(CalendarT $calendarT)

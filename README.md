@@ -123,6 +123,12 @@ run server
 php artisan serve
 ````
 
+## DB reset:
+del all tables, migrate and seed
+````shell
+ php artisan migrate:fresh --seed
+````
+
 # Info
 tsconfig.json can configure for all projects, is sorted in one for one
 ````
