@@ -20,7 +20,7 @@ use Spatie\YamlFrontMatter\YamlFrontMatter;
 Route::get('/', function () {
     $files = File::files(resource_path("posts"));
 
-    //colect Methode
+    //collect Methode
     $posts = collect($files)
         ->map(function ($file){
             $document = YamlFrontMatter::parseFile($file);
