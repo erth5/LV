@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CalendarTController;
 use App\Http\Controllers\ChainTController;
+use App\Http\Controllers\DifferentTController;
 use App\Http\Controllers\PublicTController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
@@ -33,10 +34,15 @@ Route::post('/store-chain', [ChainTController::class, 'store']);
 Route::get('/calendar', [CalendarTController::class, 'index'])->name('calendar');
 Route::post('/update-calendar', [CalendarTController::class, 'update']);
 
-// prepare: tables as blades
+Route::get('/different', [DifferentTController::class, 'index'])->name('different');
+Route::post('/update-different', [DifferentTController::class, 'update']);
+
+/* prepare: tables as blades
+
 Route::get('/different', function () {
     return view('sites.different');
 })->name('different');
+*/
 
 // table simples
 Route::get('/contact', function () {

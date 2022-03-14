@@ -84,8 +84,14 @@ php artisan serve
 ````
 ## helpers
 clear cache
-````shell
+````shell - sometimes when web.php has a vault, the routing stops
 php artisan route:cache
+php artisan cache:clear
+
+````
+optimize class
+````shell
+optimize php artisan
 ````
 regenerate vendor folder
 ````shell
@@ -126,7 +132,7 @@ php artisan serve
 ## DB reset:
 del all tables, migrate and seed
 ````shell
- php artisan migrate:fresh --seed
+php artisan migrate:fresh --seed
 ````
 
 # Info

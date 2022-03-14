@@ -15,8 +15,8 @@ class CalendarTController extends Controller
     public function index()
     {
         $data = CalendarT::all();
-        dd($data);
-        //return view('sites.calendar', compact('data'));
+        //dd($data);
+        return view('sites.calendar', compact('data'));
     }
 
     /**
@@ -79,9 +79,18 @@ class CalendarTController extends Controller
             if ($request->$res != null) {
                 $dat->editor = $request->$res;
             }
-            // TODO
+            $save = $dat->saveOrFail();
+
+            /* new data
+            $dat = new CalendarT();
+            $dat->editor = "Your_Name";
+            /*if ($request->has('terms')){
+                $dat->"mo" = $request->
+            }else{
+                //not
+            }*/
+
         }
-        dd($data);
         return view('sites.calendar', compact('data'));
     }
 

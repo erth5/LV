@@ -7,7 +7,7 @@
         <h1>This is the public Chain-Table</h1>
     </div>
 
-    <!-- Project tabeler dynamic -->
+    <!-- Tabelle -->
     <form method="post" action="{{url('/store-chain')}}">
         @csrf
         <table>
