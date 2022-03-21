@@ -1,7 +1,11 @@
 # lv
 Free Laravel Projects
 
-## prepare (linux)
+# prepair
+include 
+extension=fileinfo
+in your php.ini (php directory)
+## prepare project (linux)
 ### composer
 
 ````shell
@@ -54,11 +58,17 @@ php artisan --version
 php artisan serve
 ````
 
-## prepare (windows)
+## prepare project (windows)
 
-1. install windows-sub-system "commandline" by install docker
-2. install xampp for PHP and DB
-3. optional install laragon for DB
+1. download php, Recommended: xampp for PHP and DB
+https://www.php.net/manual/de/install.windows.tools.php
+
+2. set Path: Systemeinstellungen -> erweiterte Systemeinstellungen -> Erweitert -> Umgebungsvariablen, Recommended: set path by install composer
+
+3. install composer
+
+- OPTIONAL: install windows-sub-system "commandline" by install docker
+- OPTIONAL: install laragon or xampp for DB
 
 ````shell
 composer update
