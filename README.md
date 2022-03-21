@@ -175,7 +175,7 @@ P public_table
 Q
 R react
 S s_apps (sail spark scout socialite sanctum)
-T template (TS SASS) -> mix telescope
+T template (TS SASS) telescope 9.5.1
 U
 V vue vapier valet
 W (tail)wind (can use by jetstream)
