@@ -2,6 +2,7 @@
 Free Laravel Projects
 
 
+
 ## prepare (linux)
 ### composer
 
@@ -137,6 +138,15 @@ php artisan migrate:fresh --seed
 
 # Info
 tsconfig.json can configure for all projects, is sorted in one for one
+
+# Known Problems
+Unknown:
+league/mime-type-detection
+ignore by:
+composer update --ignore-platform-req=ext-fileinfo
+
+
+## Mehrfachbelegungen freigegeben
 ````
 A angular
 B bootstrap breeze
