@@ -79,7 +79,11 @@ class CalendarTController extends Controller
             if ($request->$res != null) {
                 $dat->editor = $request->$res;
             }
+
+
+
             $save = $dat->saveOrFail();
+            //dd($data);
 
             /* new data
             $dat = new CalendarT();

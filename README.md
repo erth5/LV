@@ -1,8 +1,6 @@
 # lv
 Free Laravel Projects
 
-
-
 ## prepare (linux)
 ### composer
 

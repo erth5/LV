@@ -24,21 +24,23 @@
             <tr>
                 <td>
                     <label>
-                        <input type="text" name="editor" maxlength="255"
+                        <input type="text" name="editor{{$dat->id}}" maxlength="255"
                                autocomplete="on" placeholder="{{$dat->editor}}">
                     </label>
                 </td>
+
                 <td>
                     <label>
                         <!--    Form by https://laravel.com/docs/4.2/html not found from laravel
                          Form::checkbox("chcbox1$dat->mo", 'true') !!}
+                         name="chcbox1{{$dat->id}}
                             -->
-                        <input value="true" type="checkbox" name="chcbox1{{$dat->id}}">
+                        <input type="checkbox" name="is_active" value="1"> < TODO !-- value will not displayed -->
                     </label>
                 </td>
                 <td>
                     <label>
-                        <input value="true" type="checkbox" name="chcbox2{{$dat->id}}">
+                        <input type="checkbox" value="true" name="chcbox2{{$dat->id}}">
                     </label>
                 </td>
                 <td>

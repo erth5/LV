@@ -2,6 +2,13 @@
 
 https://www.javaer101.com/de/article/225665034.html
 
+# Setup (see parent README)
+1. install required programs
+2. run composer and npm commands
+3. create database named: connect
+4. migrate, start mix and start serve
+
+
 ## info
 
 Illuminate is the namespace laravel choose to put their code in. The word Illuminate means to light-up something. By
