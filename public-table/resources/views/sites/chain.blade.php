@@ -39,4 +39,7 @@
     @isset($dopple_user_warning)
         <h2 class="center">{{$dopple_user_warning}}</h2>
     @endisset
+
+<p class="center"> Like Blockchain </p>
+
 @endsection

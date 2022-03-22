@@ -42,4 +42,6 @@
                 No Saving option on here
             </td>
         </tr>
+    </table>
+    <p class="center"> Like Single </p>
 @endsection

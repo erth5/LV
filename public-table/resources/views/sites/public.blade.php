@@ -61,5 +61,7 @@
 
         <input type="submit" value="Save all Data" name="submit_all_button" class="dropa">
     </form>
+
+    <p class="center"> Like Static </p>
 @endsection
 
