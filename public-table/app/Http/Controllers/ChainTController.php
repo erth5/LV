@@ -63,6 +63,7 @@ class ChainTController extends Controller
         //  session are not cookies (gives array back)
         //$dat->editor = $request->session()->all();
         $save = $dat->saveOrFail();
+        $data = ChainT::all();
         return view('sites.chain', compact('data'));
     }
 

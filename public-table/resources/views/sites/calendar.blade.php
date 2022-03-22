@@ -6,7 +6,7 @@
         <h1>This is a Calendar</h1>
     </div>
 
-    <form method="post" action="{{url('/update-calendar')}}">
+    <form method="post" action="{{ url('/update-calendar') }}">
         @csrf
         <table>
             <tr>
@@ -21,88 +21,88 @@
             </tr>
 
             <!-- Vorhandene Einträge anzeigen-->
-            @foreach($data as $dat)
-            <tr>
-                <td>
-                    <label>
-                        <input type="text" name="editor{{$dat->id}}" maxlength="255"
-                               autocomplete="on" placeholder="{{$dat->editor}}">
-                    </label>
-                </td>
+            @foreach ($data as $dat)
+                <tr>
+                    <td>
+                        <label>
+                            <input type="text" name="editor{{ $dat->id }}" maxlength="255" autocomplete="on"
+                                placeholder="{{ $dat->editor }}">
+                        </label>
+                    </td>
 
-                <td>
-                    <label>
-                        <!--    Form by https://laravel.com/docs/4.2/html not found from laravel
-                         Form::checkbox("chcbox1$dat->mo", 'true') !!}
-                         name="chcbox1{{'$dat->id'}}
-                            -->
-                    </label>
-                    <label>
-                    </label>
-                    @php
-                    if ($dat->mo) {
-                        echo "Agree";
-                    }else {
-                        echo "Don`t Agree";
-                    }
-                    @endphp
-                    </label>
-                </td>
-                <td>
-                    @php
-                    if ($dat->tu) {
-                        echo "Agree";
-                    }else {
-                        echo "Don`t Agree";
-                    }
-                    @endphp
-                </td>
-                <td>
-                    @php
-                    if ($dat->we) {
-                        echo "Agree";
-                    }else {
-                        echo "Don`t Agree";
-                    }
-                    @endphp
-                </td>
-                <td>
-                    @php
-                    if ($dat->th) {
-                        echo "Agree";
-                    }else {
-                        echo "Don`t Agree";
-                    }
-                    @endphp
-                </td>
-                <td>
-                    @php
-                    if ($dat->fr) {
-                        echo "Agree";
-                    }else {
-                        echo "Don`t Agree";
-                    }
-                    @endphp
-                </td>
-                <td>
-                    @php
-                    if ($dat->sa) {
-                        echo "Agree";
-                    }else {
-                        echo "Don`t Agree";
-                    }
-                    @endphp
-                </td>
-                <td>
-                    @php
-                    if ($dat->su) {
-                        echo "Agree";
-                    }else {
-                        echo "Don`t Agree";
-                    }
-                    @endphp
-                </td>
-            </tr>
+                    <td>
+                        <label>
+                            <!--    Form by https://laravel.com/docs/4.2/html not found from laravel
+                                 Form::checkbox("chcbox1$dat->mo", 'true') !!}
+                                 name="chcbox1{{ '$dat->id' }}
+                                    -->
+                        </label>
+                        <label>
+                        </label>
+                        @php
+                            if ($dat->mo) {
+                                echo 'Agree';
+                            } else {
+                                echo 'Don`t Agree';
+                            }
+                        @endphp
+                        </label>
+                    </td>
+                    <td>
+                        @php
+                            if ($dat->tu) {
+                                echo 'Agree';
+                            } else {
+                                echo 'Don`t Agree';
+                            }
+                        @endphp
+                    </td>
+                    <td>
+                        @php
+                            if ($dat->we) {
+                                echo 'Agree';
+                            } else {
+                                echo 'Don`t Agree';
+                            }
+                        @endphp
+                    </td>
+                    <td>
+                        @php
+                            if ($dat->th) {
+                                echo 'Agree';
+                            } else {
+                                echo 'Don`t Agree';
+                            }
+                        @endphp
+                    </td>
+                    <td>
+                        @php
+                            if ($dat->fr) {
+                                echo 'Agree';
+                            } else {
+                                echo 'Don`t Agree';
+                            }
+                        @endphp
+                    </td>
+                    <td>
+                        @php
+                            if ($dat->sa) {
+                                echo 'Agree';
+                            } else {
+                                echo 'Don`t Agree';
+                            }
+                        @endphp
+                    </td>
+                    <td>
+                        @php
+                            if ($dat->su) {
+                                echo 'Agree';
+                            } else {
+                                echo 'Don`t Agree';
+                            }
+                        @endphp
+                    </td>
+                </tr>
             @endforeach
 
 
@@ -114,7 +114,7 @@
 
                 <td>
                     <label>Your Status
-                    <input type="checkbox" name="chcbox_mo" value="1">
+                        <input type="checkbox" name="chcbox_mo" value="1">
                     </label>
                 </td>
                 <td>
@@ -144,7 +144,7 @@
                 </td>
                 <td>
                     <label>
-                        <input type="checkbox" name="chcbox_su" placeholder="{{$dat->so}}">
+                        <input type="checkbox" name="chcbox_su" placeholder="{{ $dat->so }}">
                     </label>
                 </td>
             </tr>
@@ -153,7 +153,3 @@
         <input class="dropa" type="submit" value="Save Data" name="submit_button">
     </form>
 @endsection
-
-
-
-

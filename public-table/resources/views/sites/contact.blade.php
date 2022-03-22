@@ -4,7 +4,8 @@
 @section('content')
 
     <h2 class="center">
-        TODO Contact - Formular
+        <a
+        href="mailto:rthem@gmx.de?subject="Public-Laravel_Page" "> Contact: Rthem@gmx.de </a>
     </h2>
 @endsection
 

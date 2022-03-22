@@ -11,10 +11,10 @@ html, body
 
         // variant1
         %bg_table
-            background-color: $secondary
+            background-color: lighten($secondary, 0)
 
         %bg_table_even
-            background-color: lighten($secondary, 10)
+            background-color: lighten($secondary, 20)
     // variant2-not working
     //$bg-table: $secondary
     //$bg-table_even: lighten($secondary, 10)
@@ -28,7 +28,7 @@ html, body
 
         //variant1
         %bg_table
-            background-color: darken($secondary, 10)
+            background-color: darken($secondary, 20)
 
         %bg_table_even
-            background-color: $secondary
+            background-color: darken($secondary, 10)

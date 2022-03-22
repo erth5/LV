@@ -70,7 +70,17 @@ class DifferentTController extends Controller
      */
     public function update(Request $request, DifferentT $differentT)
     {
-        //
+        $data = DifferentT::all();
+
+        if($request->plus != null && $request->minus != null){
+            $dat = new DifferentT();
+            $dat->plus = $request->plus;
+            $dat->minus = $request->minus;
+            $save = $dat->saveOrFail();
+        }
+        //dd($request->plus);
+        $data = DifferentT::all();
+        return view('sites.different', compact('data'));
     }
 
     /**

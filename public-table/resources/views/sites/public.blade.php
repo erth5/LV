@@ -12,7 +12,7 @@
 
     <form method="post" action="{{url('/update-public')}}">
     @csrf <!-- to avoid 419-page error -->
-        <input type="submit" value="Show First Line only" name="show_first_button" class="uniqua">
+        <input type="submit" value="Show Only First Line" name="show_first_button" class="uniqua">
 
         <table>
             <tr>

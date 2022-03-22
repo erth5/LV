@@ -51,7 +51,7 @@ class PublicTController extends Controller
     {
         $rowID = 1;
         $data = PublicT::find($rowID);
-        //dd($data);
+        dd($data);
         return view('sites.public_single_line', compact('data'));
     }
 
@@ -113,9 +113,16 @@ class PublicTController extends Controller
                 $save = $dat->saveOrFail();
             }
         } elseif (isset($_POST['show_first_button'])) {
-            // TODO link to show method
-            $direct = PublicTController::class;
-            'show';
+            /*
+            *   possible calling function show with same content
+            *   https://dev-ani.com/calling-a-laravel-controller-method-to-another-controller/
+            */
+
+            $rowID = 1;
+            $data = PublicT::find($rowID);
+            return view('sites.public_single_line', compact('data'));
+
+
         } else {  //Data per Line
             $line_number = -1;
             if (isset($_POST['submit_button_1']))
