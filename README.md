@@ -165,17 +165,17 @@ F frontend forge
 G gulp
 H hy horizon
 I
-J jetstream
+J jetstream https://jetstream.laravel.com/2.x/introduction.html
 K
 L
-M media 9.4.1
+M 
 N nova
 O ori-to_update
-P public_table
+P public_table post_9.4.1
 Q
 R react
 S s_apps (sail spark scout socialite sanctum)
-T template (TS SASS) telescope (non local) 9.5.1
+T template (TS SASS) telescope (non local)_9.5.1
 U
 V vue vapier valet
 W (tail)wind (can use by jetstream)
