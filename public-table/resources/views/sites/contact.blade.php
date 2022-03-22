@@ -4,7 +4,7 @@
 @section('content')
 
     <h2 class="center">
-        TODO Contact - Formula
+        TODO Contact - Formular
     </h2>
 @endsection
 

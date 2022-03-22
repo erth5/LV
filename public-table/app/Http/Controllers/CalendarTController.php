@@ -80,20 +80,42 @@ class CalendarTController extends Controller
                 $dat->editor = $request->$res;
             }
 
+            // new data
+            if ($request->editor != null){
+                $dat = new CalendarT();
+                $dat->editor = $request->editor;
 
+                if($request->chcbox_mo){
+                    $dat->mo = true;
+                }else{$dat->mo = false;}
 
-            $save = $dat->saveOrFail();
-            //dd($data);
+                if($request->chcbox_tu){
+                    $dat->tu = true;
+                }else{$dat->tu = false;}
 
-            /* new data
-            $dat = new CalendarT();
-            $dat->editor = "Your_Name";
-            /*if ($request->has('terms')){
-                $dat->"mo" = $request->
-            }else{
-                //not
-            }*/
+                if($request->chcbox_we){
+                    $dat->we = true;
+                }else{$dat->we = false;}
 
+                if($request->chcbox_th){
+                    $dat->th = true;
+                }else{$dat->th = false;}
+
+                if($request->chcbox_fr){
+                    $dat->fr = true;
+                }else{$dat->fr = false;}
+
+                if($request->chcbox_sa){
+                    $dat->sa = true;
+                }else{$dat->sa = false;}
+                if($request->chcbox_su){
+                    $dat->su = true;
+                }else{$dat->su = false;}
+
+                //dd($data);
+                $save = $dat->saveOrFail();
+            }
+            $data = CalendarT::all();
         }
         return view('sites.calendar', compact('data'));
     }

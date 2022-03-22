@@ -20,6 +20,7 @@
                 <th>Sunday</th>
             </tr>
 
+            <!-- Vorhandene Einträge anzeigen-->
             @foreach($data as $dat)
             <tr>
                 <td>
@@ -33,43 +34,121 @@
                     <label>
                         <!--    Form by https://laravel.com/docs/4.2/html not found from laravel
                          Form::checkbox("chcbox1$dat->mo", 'true') !!}
-                         name="chcbox1{{$dat->id}}
+                         name="chcbox1{{'$dat->id'}}
                             -->
-                        <input type="checkbox" name="is_active" value="1"> < TODO !-- value will not displayed -->
+                    </label>
+                    <label>
+                    </label>
+                    @php
+                    if ($dat->mo) {
+                        echo "Agree";
+                    }else {
+                        echo "Don`t Agree";
+                    }
+                    @endphp
                     </label>
                 </td>
                 <td>
-                    <label>
-                        <input type="checkbox" value="true" name="chcbox2{{$dat->id}}">
-                    </label>
+                    @php
+                    if ($dat->tu) {
+                        echo "Agree";
+                    }else {
+                        echo "Don`t Agree";
+                    }
+                    @endphp
                 </td>
                 <td>
-                    <label>
-                        <input type="checkbox" name="chcbox3{{$dat->id}}">
-                    </label>
+                    @php
+                    if ($dat->we) {
+                        echo "Agree";
+                    }else {
+                        echo "Don`t Agree";
+                    }
+                    @endphp
                 </td>
                 <td>
-                    <label>
-                        <input type="checkbox" name="chcbox4{{$dat->id}}" placeholder="{{$dat->th}}">
-                    </label>
+                    @php
+                    if ($dat->th) {
+                        echo "Agree";
+                    }else {
+                        echo "Don`t Agree";
+                    }
+                    @endphp
                 </td>
                 <td>
-                    <label>
-                        <input type="checkbox" name="chcbox5{{$dat->id}}" placeholder="{{$dat->fr}}">
-                    </label>
+                    @php
+                    if ($dat->fr) {
+                        echo "Agree";
+                    }else {
+                        echo "Don`t Agree";
+                    }
+                    @endphp
                 </td>
                 <td>
-                    <label>
-                        <input type="checkbox" name="chcbox6{{$dat->id}}" placeholder="{{$dat->sa}}">
-                    </label>
+                    @php
+                    if ($dat->sa) {
+                        echo "Agree";
+                    }else {
+                        echo "Don`t Agree";
+                    }
+                    @endphp
                 </td>
                 <td>
-                    <label>
-                        <input type="checkbox" name="chcbox7{{$dat->id}}" placeholder="{{$dat->so}}">
-                    </label>
+                    @php
+                    if ($dat->su) {
+                        echo "Agree";
+                    }else {
+                        echo "Don`t Agree";
+                    }
+                    @endphp
                 </td>
             </tr>
             @endforeach
+
+
+            <!-- Neuer Eintrag -->
+            <tr>
+                <td>
+                    <input type="text" name="editor" maxlength="255" placeholder="Your Name">
+                </td>
+
+                <td>
+                    <label>Your Status
+                    <input type="checkbox" name="chcbox_mo" value="1">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="chcbox_tu" value="true">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="chcbox_we">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="chcbox_th">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="chcbox_fr">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="chcbox_sa">
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="chcbox_su" placeholder="{{$dat->so}}">
+                    </label>
+                </td>
+            </tr>
+
         </table>
         <input class="dropa" type="submit" value="Save Data" name="submit_button">
     </form>
