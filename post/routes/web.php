@@ -17,6 +17,31 @@ use Spatie\YamlFrontMatter\YamlFrontMatter;
 |
 */
 
+
+
+Route::get('/', function(){
+    return view('posts', [
+        'posts' => Post::all()
+    ]);
+});
+
+// This function has route-model-binding
+// Give me the post, where the slug matches the slug you provide
+Route::get('posts/{post:slug}', function(Post $post){   // Post::where('slug', $post)->firstOrFail(result)
+    return view('post', [
+        'post' => $post
+    ]);
+});
+
+
+
+
+
+
+
+
+
+/* Version without Database
 Route::get('/', function () {
     $files = File::files(resource_path("posts"));
 
@@ -46,7 +71,7 @@ Route::get('/', function () {
             $document->slug
         );
     }, $files);
-*/
+
     return view('posts', ['posts' => $posts]);
 
 //    return view('welcome');
@@ -61,7 +86,7 @@ Route::get('/test', function (){
  * Verteilt Ordner Posts durch die Klasse Post(app/Models)
  * an den jeweiligen view
  *
- */
+ *
 
 // Find and Files
 Route::get('/posts', function (){
@@ -82,3 +107,4 @@ Route::get('post/{post}', function ($slug){
     ]);
 });
 
+*/

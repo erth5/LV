@@ -1,11 +1,21 @@
 # lv
 Free Laravel Projects
 
-# prepair
-include 
+# EN
+## Steps to make this Projects Useable
+All projects are stored in the subfolders of the first level.
+
+## PHP-Extension
+Some Projects need php extensions. To activate PHP-Extensions, create a php.ini in your PHP-Interpreter.
+##### Example Path:
+#### C:\xampp\php\php.ini
+
+include or add 
+````md
 extension=fileinfo
-in your php.ini (php directory)
-## prepare project (linux)
+````
+
+## Prepair Linux
 ### composer
 
 ````shell
@@ -42,22 +52,6 @@ nvm install [version.number]
 composer update
 ````
 
-### create lv project
-````shell
-composer global require laravel/installer
-laravel new <projectName>
-
-or
-
-composer create-project laravel/laravel <projectName>
-````
-
-````shell
-cd <projectName>
-php artisan --version 
-php artisan serve
-````
-
 ## prepare project (windows)
 
 1. download php, Recommended: xampp for PHP and DB
@@ -79,7 +73,7 @@ composer update
 composer create-project laravel/laravel <projectName>
 ````
 
-# check Installation
+## check Installation
 ````shell
 composer -v
 php -v
@@ -91,6 +85,31 @@ php artisan --version
 ````shell
 php artisan serve
 ````
+
+## Setup existing Laravel-Project
+1. copy env.example to .env
+2. start server and click "Generate App Key!
+
+
+### how to create a new laravel project?
+````shell
+composer global require laravel/installer
+laravel new <projectName>
+
+or
+
+composer create-project laravel/laravel <projectName>
+````
+
+````shell
+cd <projectName>
+php artisan --version 
+php artisan serve
+````
+
+
+
+
 ## helpers
 clear cache
 ````shell - sometimes when web.php has a vault, the routing stops
@@ -112,7 +131,13 @@ npm init
 npm update
 ````
 
-## Frontend
+
+## General Project Setup
+copy env.example to .env
+start server and click "Generate App Key!
+
+
+## Work with Frontend
 Integrated
 - Laravel Mix uses Webpack
 
@@ -121,14 +146,14 @@ Other
 - Gulp
 - Jetbrain file-watcher
 
-packages for Jetbrain file-watcher
+packages for **Jetbrain** file-watcher
 ````shell
 npm install -g sass
 npm install -g typescript
 npm install typescript --save-dev
 ````
 
-# start frontend
+## start frontend
 run webpack and npm
 ````shell
 npm run dev
@@ -145,16 +170,21 @@ php artisan migrate:fresh --seed
 ````
 
 # Info
-tsconfig.json can configure for all projects, is sorted in one for one
+<pre>
+tsconfig.json can be configured for all projects.
+In this Repository it configured in each project itself.
+</pre>
 
-# Known Problems
-Unknown:
-league/mime-type-detection
-ignore by:
-composer update --ignore-platform-req=ext-fileinfo
+<br />
+<br />
+
+# DE
+## Schritte, um die Projekte nutzen zu können
+
+Alle Projekte sind in den Unterordnern der ersten Ebene abgelegt.
 
 
-## Mehrfachbelegungen freigegeben
+## Projects:
 ````
 A angular
 B bootstrap breeze

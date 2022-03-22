@@ -1,7 +1,8 @@
 <!doctype html>
 <title>posts</title>
-<link rel="stylesheet" href="app.css">
 <title>Some Title wich will not displayed</title>
+<link rel="stylesheet" href="app.css">
+
 
 <body>
 <!-- An dieser Stelle wird eingefuegt -->
