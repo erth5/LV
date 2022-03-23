@@ -19,14 +19,13 @@ Löscht alle anderen Datenbanken
 ````shell
 php artisan migrate --path=/database/migrations/migration-name.php
 ````
-
-# info
 s muss angehangen werden, da bei der Suche nach der Datenbank ein s angehangen wird
 
 ## Database
-
+````shell
+php artisan db:wipe
 php artisan db:seed
-
+````
 ### public
 ````shell
 php artisan make:controller PublicTController --model=PublicT

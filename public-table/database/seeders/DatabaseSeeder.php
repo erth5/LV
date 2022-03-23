@@ -23,6 +23,6 @@ class DatabaseSeeder extends Seeder
         PublicT::factory(12)->create();     //must have: const entry's=12
         ChainT::factory(3)->create();
         CalendarT::factory(3)->create();
-        DifferentT::factory(3)->create();   //must have: 3
+        DifferentT::factory(3)->create();
     }
 }

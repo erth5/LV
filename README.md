@@ -5,7 +5,7 @@ Free Laravel Projects
 ## Steps to make this Projects Useable
 All projects are stored in the subfolders of the first level.
 
-## PHP-Extension
+### PHP-Extension
 Some Projects need php extensions. To activate PHP-Extensions, create a php.ini in your PHP-Interpreter.
 ##### Example Path:
 #### C:\xampp\php\php.ini
@@ -31,7 +31,7 @@ composer C:/ProgramData/ComposerSetup/bin/composer.phar update
 
 php composer C:/ProgramData/ComposerSetup/bin/composer.phar update
 ````
-### node.js by nvm
+### optional node.js by nvm 
 ````shell
 sudo apt update
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
@@ -61,6 +61,8 @@ https://www.php.net/manual/de/install.windows.tools.php
 
 3. install composer
 
+- OPTIONAL: install npm for using Laravel mix command
+- OPTIONAL: install node.js
 - OPTIONAL: install windows-sub-system "commandline" by install docker
 - OPTIONAL: install laragon or xampp for DB
 
@@ -162,7 +164,9 @@ run server
 ````shell
 php artisan serve
 ````
-
+# Troeblechooting
+#### Caches
+https://www.codegrepper.com/code-examples/php/laravel+clear+database+cache
 ## DB reset:
 del all tables, migrate and seed
 ````shell
@@ -185,6 +189,22 @@ The Public Folder is Excludet from Search-Index
 ## Schritte, um die Projekte nutzen zu können
 
 Alle Projekte sind in den Unterordnern der ersten Ebene abgelegt.
+
+
+## Bereite deine Systemumgebung vor (windows), um Laravel nutzen zu können
+
+1. Downloade php, Empfohlen: xampp für PHP und Datenbank
+https://www.php.net/manual/de/install.windows.tools.php
+
+2. Setz einen Systempfad: Systemeinstellungen -> erweiterte Systemeinstellungen -> Erweitert -> Umgebungsvariablen,
+Der Pfad wird auch bei der Installation von Composer abgefragt.
+
+3. Installiere Composer
+
+- OPTIONAL: installiere npm, um Laravel mix per Befehl ausführen zu können. (Und andere NPM Packete)
+- OPTIONAL: installiere node.js
+- OPTIONAL: installiere windows-sub-system für Linux, um dessen "commandline" nutzen zu können durch die Installation von Docker
+- OPTIONAL: installiere laragon oder xampp zum betreiben der DatenBank
 
 
 ## Projects:
