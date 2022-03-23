@@ -140,10 +140,12 @@ start server and click "Generate App Key!
 
 
 ## Work with Frontend
-Integrated
+https://www.script-example.com/laravel#frontend
+
+Integrated pre-compiler
 - Laravel Mix uses Webpack
 
-Other
+Other pre-compiler
 - Grunt
 - Gulp
 - Jetbrain file-watcher
