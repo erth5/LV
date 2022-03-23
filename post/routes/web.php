@@ -1,6 +1,8 @@
 <?php
 
 // Importierte Klasse von Models
+
+use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
@@ -18,10 +20,27 @@ use Spatie\YamlFrontMatter\YamlFrontMatter;
 */
 
 
-
+// Post Page
 Route::get('/', function(){
+
+    // Log Accesses of Database
+    \Illuminate\Support\Facades\DB::listen((function($query){
+        logger($query->sql, $query->bindings);
+    }));
+
     return view('posts', [
-        'posts' => Post::all()
+        // n+1 Problem und jeder Blockeintrag ein Query
+        //'posts' => Post::all()
+
+        // Lösung
+        'posts' => Post::with('category')->get()
+    ]);
+});
+
+// Category Page
+Route::get('categories/{category:slug}', function(Category $category){
+    return view('posts', [
+        'post' => $category->posts
     ]);
 });
 
@@ -32,8 +51,6 @@ Route::get('posts/{post:slug}', function(Post $post){   // Post::where('slug', $
         'post' => $post
     ]);
 });
-
-
 
 
 

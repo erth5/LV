@@ -3,7 +3,7 @@
         <h1>{!! $post->title !!}</h1>
 
         <p>
-            <a href="#">{{$post->category->name}}</a>
+            <a href="#">{{ $post->category->name }}</a>
         </p>
 
         <div>
@@ -11,6 +11,5 @@
         </div>
     </article>
 
-<a href="/">Home</a>
+    <a href="/">Home</a>
 </x-layout>
-

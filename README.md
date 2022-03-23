@@ -173,7 +173,10 @@ php artisan migrate:fresh --seed
 <pre>
 tsconfig.json can be configured for all projects.
 In this Repository it configured in each project itself.
+The Public Folder is Excludet from Search-Index
 </pre>
+
+
 
 <br />
 <br />

@@ -11,7 +11,18 @@ const mix = require('laravel-mix');
  |
  */
 
+ /*
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+*/
+
+/*declared on top
+*let mix = require('laravel-mix');
+*/
+    // webpack.mix.css
+mix.css('resources/css/app.css', 'public');
+
+    // webpack.mix.js
+mix.js('resources/js/app.js', 'public').setPublicPath('public');

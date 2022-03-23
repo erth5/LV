@@ -8,7 +8,7 @@
             </h1>
 
             <p>
-                <a href="#">{{$post->category->name}}</a>
+                <a href="/categorys/{{$post->category->slug}}">{{$post->category->name}}</a>
             </p>
 
             <div>
