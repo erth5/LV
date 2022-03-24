@@ -228,7 +228,7 @@ N nova
 O ori-to_update
 P public_table post_9.4.1
 Q
-R react
+R react (https://joeczubiak.com/laravel-plus-react/) -> Preact https://preactjs.com
 S s_apps (sail spark scout socialite sanctum)
 T template (TS SASS) telescope (non local)_9.5.1
 U
