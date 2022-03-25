@@ -11,6 +11,13 @@ const mix = require('laravel-mix');
  |
  */
 
+
+ // start artisan serve
+require('laravel-mix-serve');
+mix.serve();
+
+
+
 /*
 Automatische Ordnerwahl
 Source: Root Verzeichniss
@@ -30,5 +37,5 @@ mix.js('resources/js/app.js', 'public/js')
     ]);
 */
 
-// sync without reload, load localhost:3000
-//mix.browserSync('http://127.0.0.1:8000/');
+ // Auto-Reload
+mix.browserSync('localhost:8000')

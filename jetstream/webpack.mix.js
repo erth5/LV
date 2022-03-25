@@ -11,7 +11,15 @@ const mix = require('laravel-mix');
  |
  */
 
+  // start artisan serve
+require('laravel-mix-serve');
+mix.serve();
+
+
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
     ]);
+
+// Auto-Reload
+mix.browserSync('localhost:8000')
