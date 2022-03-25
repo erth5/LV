@@ -11,9 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
- // start artisan serve
- require('laravel-mix-serve');
- mix.serve();
+// start artisan serve
+require('laravel-mix-serve');
+mix.serve();
 
 // Tailwind expanded without sass
 mix.js('resources/js/app.js', 'public/js')
@@ -21,5 +21,5 @@ mix.js('resources/js/app.js', 'public/js')
         require('tailwindcss')
     ]);
 
- // sync without reload, load every localhost:3000
- mix.browserSync('localhost:8000')
+// sync without reload, load every localhost:3000
+mix.browserSync('localhost:8000')
