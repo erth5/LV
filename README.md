@@ -52,6 +52,11 @@ nvm install [version.number]
 composer update
 ````
 
+run server
+````shell
+npm install laravel-mix-serve --save-dev
+````
+
 ## prepare project (windows)
 
 1. download php, Recommended: xampp for PHP and DB
