@@ -1,6 +1,8 @@
 {
     "private": true,
     "scripts": {
+        "fg": "php artisan serve",
+        "bg": "npm run watch-poll",
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
@@ -11,7 +13,10 @@
     },
     "devDependencies": {
         "axios": "^0.25",
+        "browser-sync": "^2.27.9",
+        "browser-sync-webpack-plugin": "^2.3.0",
         "laravel-mix": "^6.0.6",
+        "laravel-mix-serve": "^2.2.2",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
     }
