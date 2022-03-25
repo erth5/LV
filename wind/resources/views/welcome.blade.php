@@ -17,7 +17,7 @@
     </head>
 
     <body>
-    <h1 class="text-3xl font-bold underline">
+    <h1 class="text-3xl font-bold underline center">
         Hello Tailwind for Laravel!
     </h1>
     </body>
