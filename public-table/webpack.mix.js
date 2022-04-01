@@ -12,7 +12,7 @@ const mix = require('laravel-mix');
  */
 
 
- // start artisan serve
+// start artisan serve
 require('laravel-mix-serve');
 mix.serve();
 

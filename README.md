@@ -1,3 +1,24 @@
+Stack abfragen
+laravel new <projectName> --jet
+
+Mit Stack setzen
+laravel new app --stack=livewire --jet --teams
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # lv
 Free Laravel Projects
 
