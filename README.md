@@ -1,24 +1,3 @@
-Stack abfragen
-laravel new <projectName> --jet
-
-Mit Stack setzen
-laravel new app --stack=livewire --jet --teams
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # lv
 Free Laravel Projects
 
@@ -28,7 +7,7 @@ All projects are stored in the subfolders of the first level.
 
 ### PHP-Extension
 Some Projects need php extensions. To activate PHP-Extensions, create a php.ini in your PHP-Interpreter.
-##### Example Path:
+##### most common Path:
 #### C:\xampp\php\php.ini
 
 include or add 
@@ -38,19 +17,18 @@ extension=fileinfo
 
 ## Prepair Linux
 ### composer
-
+server+extensions
 ````shell
 sudo apt install php libapache2-mod-php php-mbstring php-xmlrpc php-soap php-gd php-xml php-cli php-zip
 ````
-
+app
 ````shell
-composer.phar update
-
-php composer.phar update
-
-composer C:/ProgramData/ComposerSetup/bin/composer.phar update
-
-php composer C:/ProgramData/ComposerSetup/bin/composer.phar update
+sudo apt install curl
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+sudo chmod +x /usr/local/bin/composer
+source ~/.bashrc
+composer -v
 ````
 ### optional node.js by nvm 
 ````shell
@@ -154,12 +132,14 @@ regenerate vendor folder
 composer update
 ````
 ## setup npm
+npm will be initiate by every laravel installation
 ````shell
 npm init
+````
+mostly you can update npm direct without problems
+````shell
 npm update
 ````
-
-
 ## General Project Setup
 copy env.example to .env
 start server and click "Generate App Key!
@@ -192,7 +172,7 @@ run server
 ````shell
 php artisan serve
 ````
-# Troeblechooting
+# Troubleshooting
 #### Caches
 https://www.codegrepper.com/code-examples/php/laravel+clear+database+cache
 ## DB reset:
@@ -207,17 +187,13 @@ tsconfig.json can be configured for all projects.
 In this Repository it configured in each project itself.
 The Public Folder is Excludet from Search-Index
 </pre>
-
-
-
 <br />
 <br />
 
-# DE
+# DE - Ergänzend
 ## Schritte, um die Projekte nutzen zu können
 
 Alle Projekte sind in den Unterordnern der ersten Ebene abgelegt.
-
 
 ## Bereite deine Systemumgebung vor (windows), um Laravel nutzen zu können
 
@@ -233,12 +209,21 @@ Der Pfad wird auch bei der Installation von Composer abgefragt.
 - OPTIONAL: installiere node.js
 - OPTIONAL: installiere windows-sub-system für Linux, um dessen "commandline" nutzen zu können durch die Installation von Docker
 - OPTIONAL: installiere laragon oder xampp zum betreiben der DatenBank
-
+## NeuInstallation:
+Bei der Installation von Frameworks als Optionale Parameter auf dieser Art wird kein Laravel installiert.
+````
+composer create-project laravel/<frameworkName> <projectName>
+````
+Daher sollte der Stack abgefragt werden oder Nach-Installieren
+````
+laravel new <projectName> --jet
+laravel new app --stack=livewire --jet --teams
+````
 
 ## Projects:
 ````
 A angular
-B bootstrap breeze
+B bootstrap breeze blog
 C ~~calendar~~ cashier
 D ~~diffrent+-~~ dusk
 E envoyer
@@ -248,7 +233,7 @@ H hy horizon
 I
 J jetstream https://jetstream.laravel.com/2.x/introduction.html
 K
-L
+L livewire
 M 
 N nova
 O ori-to_update
@@ -256,10 +241,10 @@ P public_table post_9.4.1
 Q
 R react (https://joeczubiak.com/laravel-plus-react/) -> Preact https://preactjs.com
 S s_apps (sail spark scout socialite sanctum)
-T template (TS SASS) telescope (non local)_9.5.1
+T template (TS SASS) telescope (non local)_9.5.1 tailwind (can use by jetstream)
 U
 V vue vapier valet
-W (tail)wind (can use by jetstream)
+W 
 X Y Z
 ````
 base version: 9.1.0
