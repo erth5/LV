@@ -237,17 +237,17 @@ L livewire
 M 
 N nova
 O ori-to_update
-P public_table post_9.4.1
+P public_table post
 Q
 R react (https://joeczubiak.com/laravel-plus-react/) -> Preact https://preactjs.com
 S s_apps (sail spark scout socialite sanctum)
-T template (TS SASS) telescope (non local)_9.5.1 tailwind (can use by jetstream)
+T template(TS SASS) telescope(non local)  tailwind(can use by jetstream)
 U
 V vue vapier valet
 W 
 X Y Z
 ````
-base version: 9.1.0
+base version: 9.6.0
 
 
 ## License
