@@ -118,10 +118,18 @@ php artisan serve
 
 ## helpers
 clear cache
-````shell - sometimes when web.php has a vault, the routing stops
-php artisan route:cache
-php artisan cache:clear
 
+sometimes when web.php has a vault, the routing stops
+
+Löscht und Cached erneut:
+````shell
+:cache  
+````
+````shell
+php artisan cache:clear
+php artisan view:clear
+php artisan route:clear
+php artisan event:clear
 ````
 optimize class
 ````shell
