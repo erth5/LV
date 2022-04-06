@@ -221,25 +221,38 @@ laravel new app --stack=livewire --jet --teams
 ````
 
 ## Projects:
+Status
 ````
-A angular
-B bootstrap breeze blog
-C ~~calendar~~ cashier
-D ~~diffrent+-~~ dusk
-E envoyer
-F frontend forge
-G gulp
+<identifier><project>
+_
+?   TODO?
+!   TODO
+'
+°
+§   link to existing project
+$
+<attribute>=<projectname>
+````
+
+````
+A !angular
+B ?bootstrap breeze blog
+C !cashier
+D !dusk
+E !envoyer
+F frontend=hy forge
+G ?gulp
 H hy horizon
 I
-J jetstream https://jetstream.laravel.com/2.x/introduction.html
+J jetstream
 K
 L livewire
 M 
 N nova
 O ori-to_update
-P public_table post
+P public_table §post preact
 Q
-R react (https://joeczubiak.com/laravel-plus-react/) -> Preact https://preactjs.com
+R ?react
 S s_apps (sail spark scout socialite sanctum)
 T template(TS SASS) telescope(non local)  tailwind(can use by jetstream)
 U
@@ -247,7 +260,7 @@ V vue vapier valet
 W 
 X Y Z
 ````
-base version: 9.6.0
+base / minimal version: 9.6.0
 
 
 ## License
