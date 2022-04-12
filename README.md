@@ -1,6 +1,8 @@
 # lv
 Free Laravel Projects
 
+This projects will be a template to start using specific variants of Laravel.
+
 # EN
 ## Steps to make this Projects Useable
 All projects are stored in the subfolders of the first level.
@@ -241,7 +243,12 @@ _
 $
 <attribute>=<projectname>
 ````
+Syntax
+````shell
+<projectname>(extension1, ...)
+````
 
+Overview
 ````
 A !angular
 B ?bootstrap breeze blog

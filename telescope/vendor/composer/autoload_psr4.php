@@ -87,4 +87,5 @@ return array(
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
     'Brick\\Math\\' => array($vendorDir . '/brick/math/src'),
     'App\\' => array($baseDir . '/app'),
+    'Apih\\RouteListWeb\\' => array($vendorDir . '/apih/laravel-route-list-web/src'),
 );
