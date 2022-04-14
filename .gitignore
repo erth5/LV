@@ -22,11 +22,5 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 
-# Idea (by VS code controlled)
-.idea/.gitignore
-.idea/lv.iml
-.idea/modules.xml
-.idea/vcs.xml
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/php.xml
-.idea/workspace.xml
+# Idea (self controlled)
+.idea/*

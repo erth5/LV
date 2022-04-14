@@ -25,6 +25,8 @@ recommend css framework
 npm install -D tailwindcss
 npx tailwindcss init
 ````
+## SASS, TS Variant
+Use sass and ts by the two app.sass and app.ts files.
 
 ## License
 
