@@ -1,7 +1,10 @@
-## artisans
+# artisans
+
 php artisan make:component Post/Newest
 php artisan make:component Post/Categories
 php artisan make:component Post/Trending
+
+php artisan make:model Post -a
 
 ## License
 

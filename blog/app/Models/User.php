@@ -22,6 +22,18 @@ class User extends Authenticatable
         'email',
         'password',
     ];
+    // /**
+    //  * Get all of the posts for the UserFactory
+    //  *
+    //  * @return \Illuminate\Database\Eloquent\Relations\HasMany
+    //  */
+    // public function posts(): HasMany
+    // {
+    //     return $this->hasMany(Post::class, 'foreign_key', 'local_key');
+    // }
+    public function posts(){
+        return $this->hasMany(Post::class);
+    }
 
     /**
      * The attributes that should be hidden for serialization.
