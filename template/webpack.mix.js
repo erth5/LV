@@ -11,6 +11,10 @@ const mix = require('laravel-mix');
  |
  */
 
+// start artisan serve
+require('laravel-mix-serve');
+mix.serve();
+
 // Sass and Css config
 mix.sass('resources/sass/app.sass', 'public/css')
     .sourceMaps();
@@ -18,3 +22,5 @@ mix.sass('resources/sass/app.sass', 'public/css')
 mix.ts('resources/ts/app.ts', 'public/js')
     .sourceMaps();
 
+ // Auto-Reload
+ mix.browserSync('localhost:8000')

@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "bg": "no-mix-module-installed",
+        "bg": "mix",
         "fg": "php artisan serve",
         "dev": "npm run development",
         "development": "mix",
@@ -13,8 +13,13 @@
     },
     "devDependencies": {
         "axios": "^0.25",
-        "laravel-mix": "^6.0.6",
+        "laravel-mix": "^6.0.43",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.50.0",
+        "sass-loader": "^12.1.0",
+        "ts-loader": "^9.2.8",
+        "typescript": "^4.6.3"
     }
 }
