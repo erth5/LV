@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use Illuminate\Support\Facades\Schema;
 use App\Http\Requests\StorePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 
@@ -81,6 +82,6 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        Schema::dropIfExists('posts');
     }
 }

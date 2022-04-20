@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StartPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', [StartPageController::class, 'index'])->name('StartPage');
 
 Route::get('/component', function () {
     return view('index');
 });
+

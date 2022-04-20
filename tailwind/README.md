@@ -6,6 +6,8 @@ https://tailwindcss.com/docs/guides/laravel
 npm install -D tailwindcss postcss autoprefixer
 ````
 
+npm i laravel-mix-serve
+
 ####create config
 ````shell
 npx tailwindcss init

@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const tailwindcss = require('tailwindcss');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,17 +12,16 @@ const mix = require('laravel-mix');
  |
  */
 
-
- // start artisan serve
+// start artisan serve
 require('laravel-mix-serve');
 mix.serve();
 
-
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
-
+mix.js("resources/js/app.js", "public/js")
+    .sass('resources/scss/app.scss', 'public/css')
+    .options({
+        processCssUrls: false,
+        postCss: [tailwindcss('./tailwind.config.js')]
+    }).disableNotifications();  //Windows Benachrichtigungen
 
 // Auto-Reload
 mix.browserSync('localhost:8000')

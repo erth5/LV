@@ -22,6 +22,7 @@ return new class extends Migration
             $table->timestamps();
             // Soft-Delete
             $table->softDeletes();
+            $table->timestamp('published_at')->nullable();
         });
     }
 

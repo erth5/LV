@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // RelationShip Daten
-        User::factory(10)
-        ->has(Post::factory()->count(2))
+        User::factory(100)
+        ->has(Post::factory()->count(5))
         ->create();
         
 /*         Diese Richtung nicht möglich
