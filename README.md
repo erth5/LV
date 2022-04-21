@@ -275,7 +275,7 @@ V vue vapier valet
 W 
 X Y Z
 ````
-base / minimal version: 9.6.0
+base / minimal version: 9.9.0
 
 
 ## License
