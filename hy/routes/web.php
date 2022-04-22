@@ -48,3 +48,10 @@ Route::get('/', function (){
 Route::get('/styling/five_tools', function (){
     return view('styling/five_tools');
 });
+
+
+
+// Tests
+Route::get('/1', function (){
+    return view('test');
+});
