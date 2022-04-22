@@ -24,3 +24,4 @@ mix.ts('resources/ts/app.ts', 'public/js')
 
  // Auto-Reload
  mix.browserSync('localhost:8000')
+ 
