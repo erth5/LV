@@ -63,7 +63,12 @@ npm install laravel-mix-serve --save-dev
 1. download php, Recommended: xampp for PHP and DB
 https://www.php.net/manual/de/install.windows.tools.php
 
-2. set Path: Systemeinstellungen -> erweiterte Systemeinstellungen -> Erweitert -> Umgebungsvariablen, Recommended: set path by install composer
+2. set Path:
+````
+set PATH=%PATH%;C:\php\php.exe
+````
+or 
+- Systemeinstellungen -> erweiterte Systemeinstellungen -> Erweitert -> Umgebungsvariablen, Recommended: set path by install composer
 
 3. install composer
 
