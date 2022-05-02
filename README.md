@@ -154,8 +154,8 @@ Löscht und Cached erneut:
 :cache  
 ````
 
-````shell (test, allcache, blades, web, events)
-php artisan config:clear        // Änderrungen an Konfig Dateien
+````shell (config, allcache, blades, web, events)
+php artisan config:clear
 php artisan cache:clear
 php artisan view:clear
 php artisan route:clear

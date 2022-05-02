@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\ChainT;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
-use function PHPUnit\Framework\matches;
 
 class ChainTController extends Controller
 {

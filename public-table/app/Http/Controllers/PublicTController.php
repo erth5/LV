@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\PublicT;
 use Illuminate\Http\Request;
-use phpDocumentor\Reflection\File;
 
 class PublicTController extends Controller
 {
