@@ -1,6 +1,7 @@
 # Packages
+
 * Dusk
-* Selenium - https://www.selenium.dev/downloads/
+* Selenium - <https://www.selenium.dev/downloads/>
 
 ## Artisans
 
