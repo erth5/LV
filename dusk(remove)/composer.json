@@ -12,6 +12,7 @@
         "laravel/tinker": "^2.7"
     },
     "require-dev": {
+        "apih/laravel-route-list-web": "^1.0",
         "fakerphp/faker": "^1.9.1",
         "laravel/dusk": "^6.23",
         "laravel/sail": "^1.0.1",
