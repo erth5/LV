@@ -33,9 +33,9 @@
                     <td>
                         <label>
                             <!--    Form by https://laravel.com/docs/4.2/html not found from laravel
-                                 Form::checkbox("chcbox1$dat->mo", 'true') !!}
-                                 name="chcbox1{{ '$dat->id' }}
-                                    -->
+                                     Form::checkbox("chcbox1$dat->mo", 'true') !!}
+                                     name="chcbox1{{ '$dat->id' }}
+                                        -->
                         </label>
                         <label>
                         </label>
