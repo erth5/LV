@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +34,9 @@
             line-height: 1.5
         }
 
-        *, :after, :before {
+        *,
+        :after,
+        :before {
             box-sizing: border-box;
             border: 0 solid #e2e8f0
         }
@@ -43,7 +46,8 @@
             text-decoration: inherit
         }
 
-        svg, video {
+        svg,
+        video {
             display: block;
             vertical-align: middle
         }
@@ -282,7 +286,7 @@
         }
 
         .grid-cols-1 {
-            grid-template-columns:repeat(1, minmax(0, 1fr))
+            grid-template-columns: repeat(1, minmax(0, 1fr))
         }
 
         @media (min-width: 640px) {
@@ -342,7 +346,7 @@
             }
 
             .md\:grid-cols-2 {
-                grid-template-columns:repeat(2, minmax(0, 1fr))
+                grid-template-columns: repeat(2, minmax(0, 1fr))
             }
         }
 
@@ -390,6 +394,7 @@
                 color: rgba(107, 114, 128, var(--tw-text-opacity))
             }
         }
+
     </style>
     <link href="app.css" rel="stylesheet">
 
@@ -397,24 +402,27 @@
     <script src="app.js" defer></script>
 
 </head>
+
 <body>
 
-<!-- "functions" -->
-@section('content')
-    <h1 class="center">please choose a tab</h1>
-    <div id="bottom">
-        <p class="center"><!--
-        {{date("h:i:sa") }} {{ date("Y/m/d") }}&nbsp;-->
-            UNIX-Timestamp:&nbsp;{{ time() }}
-        </p>
-    </div>
-@endsection
+    <!-- "functions" -->
+    @section('content')
+        <h1 class="center">please choose a tab</h1>
+        <div id="bottom">
+            <p class="center">
+                <!--
+            {{ date('h:i:sa') }} {{ date('Y/m/d') }}&nbsp;-->
+                UNIX-Timestamp:&nbsp;{{ time() }}
+            </p>
+        </div>
+    @endsection
 
-@include('comp/menue')
+    @include('comp/menue')
 
-@yield('content')
+    @yield('content')
 
-@include('comp/footer')
+    @include('comp/footer')
 </body>
 <!---->
+
 </html>
