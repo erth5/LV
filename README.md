@@ -338,8 +338,6 @@ W
 X Y Z
 ````
 
-base / minimal version: 9.9.0
-
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
